@@ -13,6 +13,7 @@ Keep track of the local models that Leo uses in brave-core.
 - We use `config.json` and `tokenizer.json` from [Google](https://huggingface.co/google/embeddinggemma-300m/tree/main)
 - Quantized model file is from [Unsloth AI](https://huggingface.co/unsloth/embeddinggemma-300m-GGUF/tree/main)
 - 2_Dense and 3_Dense files are from [Google](https://huggingface.co/google/embeddinggemma-300m-qat-q4_0-unquantized/tree/main)
+- `litert/embeddinggemma-300M_seq512_mixed-precision.tflite` and `litert/sentencepiece.model` are from [litert-community](https://huggingface.co/litert-community/embeddinggemma-300m/tree/main)
 
 ### Nemotron Speech Streaming (int4 ONNX, English only)
 
