@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "input_window_size": 512,
+  "output_size": 768,
+  "score_threshold": 0.45
+}
