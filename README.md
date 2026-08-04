@@ -13,7 +13,8 @@ Keep track of the local models that Leo uses in brave-core.
 - We use `config.json` and `tokenizer.json` from [Google](https://huggingface.co/google/embeddinggemma-300m/tree/main)
 - Quantized model file is from [Unsloth AI](https://huggingface.co/unsloth/embeddinggemma-300m-GGUF/tree/main)
 - 2_Dense and 3_Dense files are from [Google](https://huggingface.co/google/embeddinggemma-300m-qat-q4_0-unquantized/tree/main)
-- `litert/embeddinggemma-300M_seq512_mixed-precision.tflite` and `litert/sentencepiece.model` are from [litert-community](https://huggingface.co/litert-community/embeddinggemma-300m/tree/main)
+- `litert/model.tflite` (upstream `embeddinggemma-300M_seq512_mixed-precision.tflite`, renamed to the name optimization guide resolves models by) and `litert/sentencepiece.model` are from [litert-community](https://huggingface.co/litert-community/embeddinggemma-300m/tree/main)
+- `litert/model-info.pb` carries the model version and the embedder metadata the browser reads instead of hard-coding them. Generate it from `litert/model-info.json` and the model with [`tools/generate_passage_embeddings_model_info.py`](tools/README.md), bumping `version`, whenever the LiteRT model changes
 
 ### Nemotron Speech Streaming (int4 ONNX, English only)
 

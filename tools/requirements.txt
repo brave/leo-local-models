@@ -1,0 +1,8 @@
+# Runtime for tools/generate_model_info.py. The bindings in proto_gen/ were
+# emitted by protoc 35.1 and protobuf refuses a runtime older than the gencode,
+# which in turn needs Python 3.10+.
+protobuf>=7.35.1,<8
+
+# Only needed by regenerate_protos.sh; it bundles protoc, so no separate
+# protobuf-compiler install is required.
+grpcio-tools>=1.79.0

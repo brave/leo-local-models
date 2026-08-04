@@ -1,3 +1,5 @@
 *.gguf filter=lfs diff=lfs merge=lfs -text
 *.onnx.data filter=lfs diff=lfs merge=lfs -text
 embeddinggemma-300m/litert/*.tflite filter=lfs diff=lfs merge=lfs -text
+# Serialized protobuf, small enough to keep out of LFS but not line endings.
+*.pb binary
