@@ -7,11 +7,8 @@ on:
     types: [labeled]
     paths-ignore:
       - 'tools/**'
-    paths-ignore:
-      - 'tools/**'
 
 permissions:
-  issues: write
   pull-requests: write
 
 jobs:
